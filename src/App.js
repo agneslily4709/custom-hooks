@@ -1,0 +1,15 @@
+import './App.css';
+import useCounter from './hooks/useCounter';
+
+function App() {
+        const [count,increment,decrement] = useCounter(0);
+        return (
+          <div>
+            <p>Count: {count}</p>
+            <button onClick={increment}>Increment</button>
+            <button onClick={decrement}>Decrement</button>
+          </div>
+        )
+}
+
+export default App;
